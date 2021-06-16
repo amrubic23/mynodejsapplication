@@ -54,9 +54,9 @@ module.exports = function() {
 				'database' : 'dellstore2'
 			},
 			'development' : {
-				'host' : 'dellstore2.cohobyukovto.ap-south-1.rds.amazonaws.com',
+				'host' : 'dellstore2.cxdbz9cliejc.us-east-1.rds.amazonaws.com',
 				'user' : 'dellstoreaws',
-				'password' : 'dellstoreaws',
+				'password' : 'dellstorepw',
 				'database' : 'dellstore2'
 			}
 		};
@@ -65,7 +65,7 @@ module.exports = function() {
 	function applicationConfig(){
 		return {
 			'production' : {
-				'url' : 'https://' + process.env.NODE_HOST + ':' + 
+				'url' : 'https://' + process.env.NODE_HOST + ':' +
 					process.env.NODE_PORT,
 				'host' : process.env.NODE_HOST,
 				'port' : process.env.NODE_PORT
