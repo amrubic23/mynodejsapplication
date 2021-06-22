@@ -7,7 +7,7 @@ var server = request.agent("http://localhost:3000");
 
 describe('Task routes', function () {
     describe('GET /products', function () {
-        it('Verify the Product API Response. It shoud be 200.', function (done) {
+        it('Verify the Product API Response. It shoud be 200', function (done) {
             server
                 .get('/products')
                 .expect("Content-type", /json/)
